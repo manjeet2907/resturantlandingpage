@@ -2,14 +2,21 @@ import React from "react";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import images from "../../constants/images";
+// import { gericht } from "../../constants/images";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <img src={images.gericht} alt='app__logo' />
+        {/* <img src={gericht} alt='app__logo' /> */}
+        <li className='p__opensans'>
+          <a href='#home'>
+            <li className='p__opensans'>
+              <a href='#home'>Bukhara</a>
+            </li>
+          </a>
+        </li>
       </div>
       <ul className='app__navbar-links'>
         <li className='p__opensans'>

@@ -2,7 +2,7 @@ import React from "react";
 import "./findus.css";
 
 import { SubHeading } from "../../components";
-import { images } from "../../constants";
+import { findus } from "../../constants/images";
 
 const Findus = () => (
   <div className='app__bg app__wrapper section__padding' id='contact'>
@@ -13,7 +13,8 @@ const Findus = () => (
       </h1>
       <div className='app__wrapper-content'>
         <p className='p__opensans'>
-          Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+          pariatur!
         </p>
         <p
           className='p__cormorant'
@@ -32,7 +33,7 @@ const Findus = () => (
     </div>
 
     <div className='app__wrapper_img'>
-      <img src={images.findus} alt='finus_img' />
+      <img src={findus} alt='finus_img' />
     </div>
   </div>
 );

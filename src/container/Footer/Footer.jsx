@@ -3,7 +3,7 @@ import "./footer.css";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 
 import { FooterOverlay, Newsletter } from "../../components";
-import { images } from "../../constants";
+import { spoon } from "../../constants/images";
 
 const Footer = () => (
   <div className='app__footer section__padding' id='login'>
@@ -19,13 +19,15 @@ const Footer = () => (
       </div>
 
       <div className='app__footer-links_logo'>
-        <img src={images.gericht} alt='footer_logo' />
+        <h1 className='app__footer-headtext'>Bukhara</h1>
+
         <p className='p__opensans'>
           &quot;The best way to find yourself is to lose yourself in the service
           of others.&quot;
         </p>
         <img
-          src={images.spoon}
+          src={spoon}
+          alt='spoontype'
           className='spoon__img'
           style={{ marginTop: 15 }}
         />
@@ -46,7 +48,7 @@ const Footer = () => (
     </div>
 
     <div className='footer__copyright'>
-      <p className='p__opensans'>2021 Gericht. All Rights reserved.</p>
+      <p className='p__opensans'>2022 Bukhara. All Rights reserved.</p>
     </div>
   </div>
 );

@@ -6,7 +6,12 @@ import {
   BsArrowRightShort,
 } from "react-icons/bs";
 import { SubHeading } from "../../components";
-import { images } from "../../constants";
+import {
+  gallery01,
+  gallery02,
+  gallery03,
+  gallery04,
+} from "../../constants/images";
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
@@ -38,12 +43,7 @@ const Gallery = () => {
       </div>
       <div className='app__gallery-images'>
         <div className='app__gallery-images_container' ref={scrollRef}>
-          {[
-            images.gallery01,
-            images.gallery02,
-            images.gallery03,
-            images.gallery04,
-          ].map((image, index) => (
+          {[gallery01, gallery02, gallery03, gallery04].map((image, index) => (
             <div
               className='app__gallery-images_card flex__center'
               key={`gallery_image-${index + 1}`}>
